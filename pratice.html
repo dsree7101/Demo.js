@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+     <title>HTML PAGE</title>
+<body>
+    <!-- <h1>HTML </h1>
+    <p>this is used for html</p>
+    <input type="text">
+    <input type="radio">
+    <input type= "button">
+     -->
+
+    <h1 id="h1id">HTML </h1>
+    <h2 id="h2id">HTML BASICS  </h1>
+    <p id = "pid">this is used for html</p>
+  
+    <div id="div1tag">
+        <h1>I am H1 in div tag</h1>
+        <h2>I am H2 in div tag</h2>
+        <p>I am pragraph in div tag</p>
+        <p>I am pragraph in div tag1</p>
+    </div>
+
+    <h1 class="h1cls">HTML</h1>
+    <!-- <h1 class="h1cls">HTML BASICS</h1>
+    <h2 class="h1cls">HTML BASICS CSS</h2>
+    <p class="h1cls">HTML BASICS CSS with p tag</p> -->
+    <h2>I am H22 in div tag</h2>
+    <h2>I am H222 in div tag</h2>
+    <p class="pcls">this is used for html</p>
+    <label>firname</label>
+    <input type="textbox" name="sai" >
+    
+    
+  
+    <div class="divcls">
+        <h1>I am H1 in div tag</h1>
+        <h2>I am H2 in div tag</h2>
+        <p>I am pragraph in div tag</p>
+        <p>I am pragraph in div tag1</p>
+    </div>
+
+    <div class="divcls">
+        <h1>I am H11 in div tag</h1>
+        <h2>I am H22 in div tag</h2>
+        <p>I am pragraph in div tag</p>
+        <p>I am pragraph in div tag1</p>
+    </div>
+
+    <div>
+        <h1>Welcome to My Web Page</h1>
+        <h2>Hello, World!</h2>
+        <p>This is a simple webpage with HTML.</p>
+        <button onclick="showMessage()">Click Me</button>
+        <h2>HTML Image</h2>
+        
+       
+
+        <p id="message"></p>
+    </div>
+    <script>
+        // console.log(document.body)
+        // console.log(window)
+        // console.log(document.head.nextElementSibling)
+        // console.log(document.body.previousElementSibling)
+        // this is we can access the aHtml elements
+
+        // we can access with id also
+
+        console.log(document.getElementById("h1id").innerHTML)
+           document.getElementById("h1id").innerHTML = "DOM HTML"
+           console.log(document.getElementById("h1id").innerHTML)
+        
+        // console.log(document.getElementById("h1id").innerHTML)
+        // console.log(document.getElementById("h2id").innerHTML)
+        // console.log(document.getElementById("pid").innerHTML)
+
+        let va = document.getElementById("div1tag")
+        // console.log(va)
+        // let div1 = va.children[0].innerHTML
+        // console.log(div1)
+        // let div2 = va.children[1].innerHTML
+        // console.log(div2)
+        
+        // let div2 = va.children
+        // for (const element of div2) {
+        //     console.log(element)
+        // }
+
+        // let login = true
+        // if(login){
+        //     document.getElementById("h1id").innerHTML = "Login Successful"
+        // }else{
+        //     document.getElementById("h1id").innerHTML = "Login UnSuccessful"
+        
+        // }
+
+        // we can access with classname also
+        // console.log(document.getElementsByClassName("h1cls").innerHTML) NOT VALID
+        console.log(document.getElementsByClassName("h1cls")[0].innerHTML)
+        console.log(document.getElementsByClassName("h1cls")[1].innerHTML)
+        console.log(document.getElementsByClassName("h1cls")[2].innerHTML)
+        console.log(document.getElementsByClassName("pcls")[0].innerHTML)
+        let val = document.getElementsByClassName("divcls")[0]
+        let val1 = val.children[2].innerHTML
+        console.log(val1)
+
+        function showMessage() {
+            document.getElementById("message").innerText = "You clicked the button!";
+        }
+
+        console.log(document.getElementsByTagName("h2")[0].innerHTML)
+        console.log(document.getElementsByTagName("div")[0].children[0].innerHTML)
+        console.log(document.getElementsByName("sai")[0].value)
+    </script>
+    
+</body>
+</html>
